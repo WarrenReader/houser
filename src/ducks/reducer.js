@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 //SET INITIAL STATE
 const initialState = {
    username: '',
@@ -14,7 +16,7 @@ const initialState = {
    desiredRent: ''
 }
 
-
+const LOGIN = "LOGIN";
 const UPDATE_USERNAME = "UPDATE_USER_NAME";
 const UPDATE_PASSWORD = "UPDATE_PASSWORD";
 
@@ -34,6 +36,21 @@ export default function reducer(state = initialState, action) {
    }
 }
 
+
+// FUNCTIONS
+
+export function login(obj, history) {
+   return {
+      type: LOGIN,
+      payload: axios.post('http://localhost:7777/api/login', obj).then(res => {
+         console.log(res)
+         history.push('/dashboard')
+      })
+   }
+}
+
+
+// UPDATING STATE
 
 export function updateUsername(username) {
    return {
