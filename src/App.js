@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+// import './reset.css';
 import './App.css';
-import './reset.css';
+
 
 class App extends Component {
   render() {
