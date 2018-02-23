@@ -10,11 +10,11 @@ import AddNewListing from './components/addnewlisting/addnewlisting.js';
 export default (
 
    <HashRouter>
-      <div>
+      <Switch>
          <Route exact path='/' component={Homepage}/>
          <Route path='/dashboard' component={Dashboard} />
          <Route path='/wizard/1' component={AddNewListing} />
-      </div>
+      </Switch>
    </HashRouter>
 
 )
