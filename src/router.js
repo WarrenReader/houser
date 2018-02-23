@@ -5,6 +5,7 @@ import {HashRouter} from 'react-router-dom';
 // COMPONENTS
 import Homepage from './components/homepage/homepage.js';
 import Dashboard from './components/dashboard/dashboard.js';
+import AddNewListing from './components/addnewlisting/addnewlisting.js';
 
 export default (
 
@@ -12,6 +13,7 @@ export default (
       <div>
          <Route exact path='/' component={Homepage}/>
          <Route path='/dashboard' component={Dashboard} />
+         <Route path='/wizard/1' component={AddNewListing} />
       </div>
    </HashRouter>
 

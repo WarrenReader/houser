@@ -1,0 +1,13 @@
+.add-new-listing-container {
+   width: 50%;
+   min-height: 900px;
+   height: auto;
+   box-sizing: border-box;
+   margin-top: 75px;
+   background-image: linear-gradient(180deg,#e2f3ea,#fff);
+   padding: 20px;
+   min-width: 759px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
