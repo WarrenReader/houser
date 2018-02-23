@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './reset.css';
 import './App.css';
-import Homepage from './components/homepage/homepage.js';
+import router from './router';
 
 
 export default class App extends Component {
@@ -9,7 +9,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Homepage />
+        {router}
       </div>
     );
   }
