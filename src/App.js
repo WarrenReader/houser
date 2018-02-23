@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-// import './reset.css';
+import './reset.css';
 import './App.css';
+import Homepage from './components/homepage/homepage.js';
 
 
-class App extends Component {
+export default class App extends Component {
+
   render() {
     return (
-      <div className="App">
-        
+      <div>
+        <Homepage />
       </div>
     );
   }
 }
-
-export default App;
